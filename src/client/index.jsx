@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Header} from './Header.jsx'
+import {Header} from '../shared/Header.jsx'
 
 window.addEventListener('load', () => {
-    ReactDOM.render(
+    ReactDOM.hydrate(
         <Header />,
         document.getElementById('root')
     );
